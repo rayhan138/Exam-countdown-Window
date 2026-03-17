@@ -1,9 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Exam Countdown Overlay",
-  "version": "2.0.0",
-  "description": "Draggable floating exam countdown on every webpage.",
+  "version": "8.0.0",
+  "description": "Draggable, resizable exam countdown overlay on every webpage.",
   "permissions": ["storage"],
+  "web_accessible_resources": [
+    {
+      "resources": ["fonts/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
